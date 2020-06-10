@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	
+	  <link rel="stylesheet" href="./hh.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"> -->
+
+<link rel="stylesheet" href="./css/bootstrap-4.3.1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+ 
+
+
+  
+    <div>  
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg btn-modal" data-toggle="modal" data-target="#myModal" data-tab="login">ورود</button>
+  
+      <button type="button" class="btn btn-primary btn-lg btn-modal" data-toggle="modal" data-target="#myModal" data-tab="register">ثبت نام</button>
+       
+      
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">ورود</a></li>
+            <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">ثبت نام</a></li>
+          </ul>
+    
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="login">
+             
+              <div class="modal-body">
+                <form data-parsley-validate>
+                  <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <input type="email" class="form-control" id="email" placeholder="ایمیل" data-parsley-trigger="change" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">رمز عبور</label>
+                    <input type="password" class="form-control" id="password" placeholder="رمز عبور" data-parsley-trigger="change" required>
+                  </div>
+                  <button type="submit" class="btn btn-grey">ورود</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+         
+                <p><a class="" role="button" data-toggle="collapse" href="#forgot-password-collapse" aria-expanded="false" aria-controls="forgot-password-collapse">فراموشی رمز عبور؟</a></p>
+                
+                <div class="collapse" id="forgot-password-collapse">
+                  <h5>بازیابی رمز عبور</h5>
+                  <p>لطفا ایمیل خود را وارد کنید تا رمز عبوری جدید برایتان فرستاده شود</p>
+                  <form>
+                    <div class="form-group">
+                      <label for="forgot-password-email">ایمیل</label>
+                      <input type="email" class="form-control" id="forgot-password-email" placeholder="ایمیل">
+                    </div>
+                    <button type="submit" class="btn btn-grey">فرستادن رمز عبور</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="register">
+              <div class="modal-body">
+                <form class="row">
+                  <div class="form-group col-sm-12">
+                    <label for="proposal-name">نام کاربری</label>
+                    <input type="text" class="form-control" id="proposal-name" placeholder="نام کاربری">
+                  </div>
+                
+                  <div class="checkbox col-xs-12">
+                  </div>
+                  <div class="new-customer clearfix">
+                    <div class="form-group col-sm-12">
+                      <label for="email-address">ایمیل</label>
+                      <input type="email" class="form-control" id="email-address" placeholder="ایمیل">
+                    </div>
+                  
+                    
+                    <div class="form-group col-sm-6">
+                      <label for="confirm-password">تایید رمز عبور</label>
+                      <input type="password" class="form-control" id="confirm-password" placeholder="رمز عبور">
+                    </div>
+
+                    <div class="form-group col-sm-6">
+                      <label for="password">رمز عبور</label>
+                      <input type="password" class="form-control" id="password" placeholder="رمز عبور">
+                    </div>
+
+                    <small class="col-xs-12">رمز عبور باید حداقل دارای 8 حرف ، یک حرف بزرگ و یک عدد باشد</small>
+                    <div class="checkbox col-xs-12">
+                      
+                    <div class="form-group col-sm-12">
+                      <label for="phone">تلفن همراه</label>
+                      <input type="tel" class="form-control" id="phone" placeholder="تلفن همراه">
+                    </div>
+                  </div>
+                    <div class="form-group col-sm-12">
+                      <label for="zip-code">کد صحت سنجی</label>
+                      <input type="tel" class="form-control" id="zip-code" placeholder="کد 5رقمی">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-grey create-account">Create Account</button>
+                    <button type="submit" class="btn btn-grey verify-account hide">Verify Account</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+
+
+
+
+
+ 
+
+
+<script>
+
+$(document).ready(function() {
+   // Open active tab based on button clicked
+    $('.btn-modal').on('click', function() {
+      var switchTab = $(this).data('tab');   
+      activaTab(switchTab);
+      function activaTab(switchTab) {
+          $('.nav-tabs a[href="#' + switchTab + '"]').tab('show');
+      };
+    });
+   
+   // Toggle New/Existing Customer
+    var custType = $('#customer-type'),
+        newCust = $('.new-customer'),
+        existCust = $('.existing-customer'),
+        createAccBtn = $('.create-account'),
+        verifyAccBtn = $('.verify-account');
+   
+    custType.val($(this).is(':checked'))
+            .change(function() {
+    if ($(this).is(':checked')) {
+          newCust.fadeToggle(400, function() { // Hide Full form when checked
+            existCust.fadeToggle(500); //Display Small form when checked
+            createAccBtn.toggleClass('hide');
+            verifyAccBtn.toggleClass('hide');
+          });
+          
+        } else {
+          existCust.fadeToggle(400, function() { //Hide Small form when unchecked
+            newCust.fadeToggle(500); //Display Full form when unchecked
+            createAccBtn.toggleClass('hide');
+            verifyAccBtn.toggleClass('hide');
+          });
+          
+        }
+   });
+  });
+
+
+
+</script>
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	  
+
+	  
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script> 
+	<script src="/js/sign-in.js"></script> 
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+<!--	<script src="https://cdn.rawgit.com/tonystar/bootstrap-hover-tabs/v3.1.1/bootstrap-hover-tabs.js"></script>-->
+  </body>
+</html>

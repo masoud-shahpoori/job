@@ -1,5 +1,561 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	  <link rel="stylesheet" href="css/index.css">
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="fonts/fontawesome-webfont.woff">
+	
+  </head>
+  <body>
+  	<!-- body code goes here -->
+<header>
+        <div class="header">
+		  <div class="container-fluid">
+  <ul class="ul-nav-right">
+	  <li>logo </li>
+	  <li>
+		  
+		  <button id="myBtn-search" type="button" class="btn" data-toggle="modal" data-target="#myModal-search"> <i class="fa fa-search"></i> جستجو </button>
+    </li>
+  
+  </ul>
 
-<h1>hello world<h1/>
+		  <div class="ul-nav-left">  
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-modal btn-sign-up" data-toggle="modal" data-target="#myModal" data-tab="login">ورود</button>
+		
+			<button type="button" class="btn btn-modal btn-sign-up" data-toggle="modal" data-target="#myModal" data-tab="register">ثبت نام</button>
+			 
+			
+		  </div>
+  </div>
+</div>
 
+
+  
+  
+ 
+  
+	
+		<nav id="primary_nav_wrap" class="">
+			<div class="">
+<ul class="">
+  <li class="current-menu-item"><a href="index.html" class="active-main">خانه</a></li>
+	<li ><a href="#" >دسته بندی ها <i id="dropdown-angle" class="fa fa-angle-down" aria-hidden="true"></i></a>
+    <section>
+   <div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'London')">برنامه نویسی <i class="fa fa-angle-left tab-padding-right"></i> </button>
+  <button class="tablinks" onmouseover="openCity(event, 'web')">   خدمات وب <i class="fa fa-angle-left  tab-padding-right"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'design-graphic')">خدمات طراحی  <i class="fa fa-angle-left tab-padding-right"></i></button>
+  <button class="tablinks" onmouseover="openCity(event, 'online-partner')">دستیار مجازی  <i class="fa fa-angle-left tab-padding-right"></i></button>
+	    <button class="tablinks" onmouseover="openCity(event, 'Honary')">خدمات هنری <i class="fa fa-angle-left tab-padding-right"></i></button>
+	    <button class="tablinks" onmouseover="openCity(event, 'other')">دیگر خدمات <i class="fa fa-angle-left tab-padding-right"></i></button>
+</div>
+
+<div id="London" class="tabcontent">
+	<div class="img-machin-learning">
+		<img class="" src="images/icon/android-icon.png" alt="">
+		<p>Android</p>
+	</div>
+  
+	<div class="img-machin-learning">
+	<img class="" src="images/icon/ios.webp" alt="">
+		<p>IOS</p>
+	</div>
+	<div class="img-machin-learning">
+	<img class="" src="images/icon/dekstop.png" alt="">
+		<p>Dekstop</p>
+	</div>
+	
+</div>
+
+<div id="web" class="tabcontent">
+	
+	<div class="web-design">
+		<img class="" src="images/icon/web.jpg" alt="">
+		<p>برنامه نویسی</p>
+	</div>
+  
+	<div class="web-design">
+	<img class="" src="images/icon/wordpress.png" alt="">
+		<p>وردپرس</p>
+	</div>
+	<div class="web-design">
+	<img class="" src="images/icon/seo.png" alt="">
+		<p>سئو</p>
+	</div>
+	
+</div>
+
+		
+		<div id="design-graphic" class="tabcontent">
+	<div class="design-graphic">
+		<img class="" src="images/icon/graphic.png" alt="">
+		<p>گرافیک</p>
+	</div>
+  
+	<div class="design-graphic">
+	<img class="" src="images/icon/artitechure.png" alt="">
+		<p>معماری</p>
+	</div>
+	<div class="design-graphic">
+	<img class="" src="images/icon/editing.png" alt="">
+		<p>تدوین</p>
+	</div>
+</div>
+		
+		
+<div id="online-partner" class="tabcontent">
+	<div class="online-partner">
+		<img class="" src="images/icon/support.png" alt="">
+		<p>پشتیبانی</p>
+	</div>
+  
+	<div class="online-partner">
+	<img class="" src="images/icon/Marketing.png" alt="">
+		<p>بازاریابی</p>
+	</div>
+	<div class="online-partner">
+	<img class="" src="images/icon/content.webp" alt="">
+		<p>تولید محتوا</p>
+	</div>
+</div>
+		
+	<div id="Honary" class="tabcontent">
+ 	<div class="art">
+		<img class="" src="images/icon/cinema.jpg" alt="">
+		<p>سینما</p>
+	</div>
+  
+	<div class="art">
+	<img class="" src="images/icon/music.png" alt="">
+		<p>موسیقی</p>
+	</div>
+	<div class="art">
+	<img class="" src="images/icon/art.png" alt="">
+		<p>نقاشی</p>
+	</div>
+</div>	
+			<div id="other" class="tabcontent">
+ 	<div class="other">
+		<img class="" src="images/icon/accounting.png" alt="">
+		<p>حسابداری</p>
+	</div>
+  
+	<div class="other">
+	<img class="" src="images/icon/translating.svg" alt="">
+		<p>ترجمه</p>
+	</div>
+	<div class="other">
+	<img class="" src="images/icon/typing.png" alt="">
+		<p>تایپ</p>
+	</div>
+</div>	
+		
+    </section>
+  </li>
+  <li ><a href="#" class="nav-border">درباره ی ما</a>
+  
+  </li>
+<!--
+  <li><a href="#">Menu 4</a></li>
+  <li><a href="#">Menu 5</a></li>
+  <li><a href="#">Menu 6</a></li>
+-->
+  <li><a href="#" class="nav-border">تماس با ما</a></li>
+</ul>
+				</div>
+</nav>
+
+	  </header>
+	  
+	  
+	  
+	  <main>
+		  
+		  <section id="banner">
+		  
+			  
+			  
+ 
+<video autoplay muted loop id="myVideo">
+  <source src="house-v2.mp4" type="video/mp4">
+</video>
+
+		  <div id="banner-text">
+			  
+		<h1>بهترین فریلنسرها را <br>برای هر شغل ،
+			بصورت آنلاین استخدام کنید</h1> 
+			 <p>
+			  هزاران نفر از jobamoz استفاده میکنند تا ایده های خود را به واقعیت تبدیل کنند</p>
+			    <button class="btn btn-banner-text1">فریلنسر شوید</button>
+			  
+			  <button class="btn btn-banner-text2">درخواست پروژه</button>
+		</div>
+			  
+			
+		  
+		  </section>
+		  
+		  <section id="sec2" class="container-fluid section-padding container">
+	  
+<div class="col-lg-4 sec2">
+	<img src="images/choose-freelancers.svg" alt="">
+	<h2>انتخاب فریلنسر خود
+</h2>
+	<p>هرچه نیاز شما باشد ، یک فریلنسر برای انجام آن وجود خواهد داشت: از طراحی وب ، توسعه برنامه تلفن همراه ، دستیاران مجازی ، تولید محصول و طراحی گرافیک (و موارد بسیار دیگری).</p>
+</div>
+
+<div class="col-lg-4 sec2">
+	<img src="images/pay-safely.svg" alt="">
+	<h2>پرداخت امن</h2>
+	<p>با پرداخت مطمئن و هزاران متخصص در زمینه بررسی ، ساده ترین و ایمن ترین روش برای انجام کار آنلاین است.</p>
+</div>
+<div class="col-lg-4 sec2">
+	<img src="images/post-a-job.svg" alt="">
+	<h2>پست شغل
+</h2>
+	<p>
+آسان است. به سادگی شغل مورد نیاز خود را ارسال کرده و پیشنهادات رقابتی را از طریق مترجمان در عرض چند دقیقه دریافت کنید.</p>
+</div>
+
+	  </section>
+		  
+		  <section id="sec3" class="section-padding container">
+		  
+		  <h2 class="h2-sec3">پروژه های ویژه</h2>
+		  
+		  <div class="col-lg-3 col-sm-2 col-xs-12 sec3">
+		  	<img  class="img-responsive" src="images/19131.jpg" alt="">
+		  	<h2>Lorem ipsum.</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, officiis!</p>
+			  <button class="btn btn-sec3">دیدن پروژه</button>
+		  </div>
+		  <div class="col-lg-3 col-sm-2 col-xs-12 sec3">
+		  	<img  class="img-responsive" src="images/OAYTMM0.jpg" alt="">
+		  	<h2>Lorem ipsum.</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, officiis!</p>
+			  <button class="btn btn-sec3">دیدن پروژه</button>
+		  </div>
+		  <div class="col-lg-3 col-sm-2 col-xs-12 sec3">
+		  	<img  class="img-responsive" src="images/OAYTQN0.jpg" alt="">
+		  	<h2>Lorem ipsum.</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, officiis!</p>
+			  <button class="btn btn-sec3">دیدن پروژه</button>
+		  </div>
+		  <div class="col-lg-3 col-sm-2 col-xs-12 sec3">
+		  	<img class="img-responsive" src="images/19451.jpg" alt="">
+		  	<h2>Lorem ipsum.</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, officiis!</p>
+			  <button class="btn btn-sec3">دیدن پروژه</button>
+		  </div>
+		  </section>
+		  
+		  <section id="sec4" class="section-padding">
+		   <div id="sec4-container" class="container">
+			   <h2>دسته بندی های برتر</h2>
+			   
+			   <div class="sec4-div col-lg-2">
+			   	<div class="sec4-div-container">
+				   <img class="img-responsive" src="images/icon/accounting.png" alt="">
+				   </div>
+			   	<h5>accounting</h5>
+			   </div>
+			   
+			   <div class="sec4-div col-lg-2">
+			   	<div class="sec4-div-container"><img class="img-responsive" src="images/icon/art.png" alt=""></div>
+			   	<h5>art</h5>
+			   </div>
+			   <div class="sec4-div col-lg-2">
+			   	<div class="sec4-div-container"><img class="img-responsive" src="images/icon/cinema.jpg" alt=""></div>
+			   	<h5>cinema</h5>
+			   </div>
+			   <div class="sec4-div col-lg-2">
+			   	<div class="sec4-div-container"><img class="img-responsive" src="images/icon/graphic.png" alt=""></div>
+			   	<h5>graphic</h5>
+			   </div>
+			    <div class="sec4-div col-lg-2">
+			   	<div class="sec4-div-container"><img class="img-responsive" src="images/icon/dekstop.png" alt=""></div>
+			   	<h5>dekstop</h5>
+			   </div>
+			    <div class="sec4-div col-lg-2">
+			   	<div class="sec4-div-container"><img class="img-responsive" src="images/icon/music.png" alt=""></div>
+			   	<h5>Music</h5>
+			   </div>
+			 
+			   
+			   
+			  </div>
+		  
+		  
+		  
+		  </section>
+		  <section id="top-freelancer" class="section-padding">
+		  <h2>فریلنسر های برتر</h2>
+		  
+		  
+		  </section>
+		  
+		  
+	  </main>
+	  
+	  <footer class="section-padding">
+	  
+	<div id="footer-top-div">
+		  
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eum, rerum eius reprehenderit optio nisi. Consectetur harum quas hic ex, alias rem necessitatibus nobis voluptate sunt provident   
+    </div>
+	  
+	  
+	  </footer>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+<!-- The Modal for search -->
+
+  <div class="modal fade" id="myModal-search" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          
+			
+			
+			
+			
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+
+	
+	
+
+<!-- Modal for sign in -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+		  <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">ورود</a></li>
+		  <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">ثبت نام</a></li>
+		</ul>
+  
+		<!-- Tab panes -->
+		<div class="tab-content">
+		  <div role="tabpanel" class="tab-pane fade in active" id="login">
+		   
+			<div class="modal-body">
+			  <form data-parsley-validate>
+				<div class="form-group">
+				  <label for="email">ایمیل</label>
+				  <input type="email" class="form-control" id="email" placeholder="ایمیل" data-parsley-trigger="change" required>
+				</div>
+				<div class="form-group">
+				  <label for="password">رمز عبور</label>
+				  <input type="password" class="form-control" id="password" placeholder="رمز عبور" data-parsley-trigger="change" required>
+				</div>
+				<button type="submit" class="btn btn-grey">ورود</button>
+			  </form>
+			</div>
+			<div class="modal-footer">
+	   
+			  <p><a class="" role="button" data-toggle="collapse" href="#forgot-password-collapse" aria-expanded="false" aria-controls="forgot-password-collapse">فراموشی رمز عبور؟</a></p>
+			  
+			  <div class="collapse" id="forgot-password-collapse">
+				<h5>بازیابی رمز عبور</h5>
+				<p>لطفا ایمیل خود را وارد کنید تا رمز عبوری جدید برایتان فرستاده شود</p>
+				<form>
+				  <div class="form-group">
+					<label for="forgot-password-email">ایمیل</label>
+					<input type="email" class="form-control" id="forgot-password-email" placeholder="ایمیل">
+				  </div>
+				  <button type="submit" class="btn btn-grey">فرستادن رمز عبور</button>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		  <div role="tabpanel" class="tab-pane fade" id="register">
+			<div class="modal-body">
+			  <form class="row">
+				<div class="form-group col-sm-12">
+				  <label for="proposal-name">نام کاربری</label>
+				  <input type="text" class="form-control" id="proposal-name" placeholder="نام کاربری">
+				</div>
+			  
+				<div class="checkbox col-xs-12">
+				</div>
+				<div class="new-customer clearfix">
+				  <div class="form-group col-sm-12">
+					<label for="email-address">ایمیل</label>
+					<input type="email" class="form-control" id="email-address" placeholder="ایمیل">
+				  </div>
+				
+				  
+				  <div class="form-group col-sm-6">
+					<label for="confirm-password">تایید رمز عبور</label>
+					<input type="password" class="form-control" id="confirm-password" placeholder="رمز عبور">
+				  </div>
+
+				  <div class="form-group col-sm-6">
+					<label for="password">رمز عبور</label>
+					<input type="password" class="form-control" id="password" placeholder="رمز عبور">
+				  </div>
+
+				  <small class="col-xs-12">رمز عبور باید حداقل دارای 8 حرف ، یک حرف بزرگ و یک عدد باشد</small>
+				  <div class="checkbox col-xs-12">
+					
+				  <div class="form-group col-sm-12">
+					<label for="phone">تلفن همراه</label>
+					<input type="tel" class="form-control" id="phone" placeholder="تلفن همراه">
+				  </div>
+				</div>
+				  <div class="form-group col-sm-12">
+					<label for="zip-code">کد صحت سنجی</label>
+					<input type="tel" class="form-control" id="zip-code" placeholder="کد 5رقمی">
+				  </div>
+				</div>
+				<div class="modal-footer">
+				  <button type="submit" class="btn btn-grey create-account">ثبت نام</button>
+				  <button type="submit" class="btn btn-grey verify-account hide">Verify Account</button>
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+	
+	  
+	  
+<script>
+	/*navbar sticky*/
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("primary_nav_wrap");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+	  
+	  
+	   <script>
+	// Get the modal search
+
+		   
+		   
+		   
+		   
+	  </script> 
+	  
+
+<script>
+//get modal for sign in
+$(document).ready(function() {
+   // Open active tab based on button clicked
+    $('.btn-modal').on('click', function() {
+      var switchTab = $(this).data('tab');   
+      activaTab(switchTab);
+      function activaTab(switchTab) {
+          $('.nav-tabs a[href="#' + switchTab + '"]').tab('show');
+      };
+    });
+   
+   // Toggle New/Existing Customer
+    var custType = $('#customer-type'),
+        newCust = $('.new-customer'),
+        existCust = $('.existing-customer'),
+        createAccBtn = $('.create-account'),
+        verifyAccBtn = $('.verify-account');
+   
+    custType.val($(this).is(':checked'))
+            .change(function() {
+    if ($(this).is(':checked')) {
+          newCust.fadeToggle(400, function() { // Hide Full form when checked
+            existCust.fadeToggle(500); //Display Small form when checked
+            createAccBtn.toggleClass('hide');
+            verifyAccBtn.toggleClass('hide');
+          });
+          
+        } else {
+          existCust.fadeToggle(400, function() { //Hide Small form when unchecked
+            newCust.fadeToggle(500); //Display Full form when unchecked
+            createAccBtn.toggleClass('hide');
+            verifyAccBtn.toggleClass('hide');
+          });
+          
+        }
+   });
+  });
+
+
+
+
+
+</script>
+
+
+
+
+
+	  
+	  <script>
+//	hover tabs menu
+		  
+	function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	  
+	  </script>
+	  
+	  
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/sign-in.js"></script>
+  </body>
 </html>
